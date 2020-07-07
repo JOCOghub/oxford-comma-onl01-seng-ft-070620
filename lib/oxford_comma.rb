@@ -14,7 +14,7 @@ def oxford_comma(array)
     array.insert(-2,"and")
     array.each.with_index do |fruit, idx|
       if fruit != "and" || idx != array.length - 1
-        new_arr << fruit += ","
+        new_arr << fruit + ","
       else
         new_arr << fruit
       end
