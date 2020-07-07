@@ -15,6 +15,7 @@ def oxford_comma(array)
       if fruit != "and" || idx != array.length - 1
         fruit += ","
       end
+    end
     array.join('')
   end
 end
