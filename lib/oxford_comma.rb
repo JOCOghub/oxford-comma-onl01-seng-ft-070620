@@ -10,7 +10,7 @@ def oxford_comma(array)
     
   if array.length > 2 
     array.each.with_index do |name, idx|
-      if idx != (array.length - 1) && name != "and"
+      if idx != (array.length - 1) && (name != "and")
         name += ","
       end 
     end   
