@@ -13,6 +13,7 @@ def oxford_comma(array)
       if idx != (array.length - 2) 
         if name != "and"
           name += ","
+        end
       end 
     end   
     array.insert(-2,"and")
