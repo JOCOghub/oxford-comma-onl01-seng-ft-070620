@@ -19,6 +19,6 @@ def oxford_comma(array)
         new_arr << fruit
       end
     end
-    return array.join(' ')
+    return new_arr.join(' ')
   end
 end
