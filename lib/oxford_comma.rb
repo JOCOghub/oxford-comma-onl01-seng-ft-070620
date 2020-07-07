@@ -9,11 +9,12 @@ def oxford_comma(array)
   end
     
   if array.length > 2 
-      array.join(", ")
-      array.insert(-2,"and")
-      array.each.with_index do |fruit, idx|
-        if fruit != "and" || idx != array.length - 1
-          fruit += ","
-        end  
+    array.join(", ")
+    array.insert(-2,"and")
+    array.each.with_index do |fruit, idx|
+      if fruit != "and" || idx != array.length - 1
+        fruit += ","
+      end
+    array.join('')
   end
 end
