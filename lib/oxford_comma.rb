@@ -13,10 +13,10 @@ def oxford_comma(array)
     array.join(", ")
     array.insert(-2,"and")
     array.each.with_index do |fruit, idx|
-      if fruit != "and" || idx != array.length - 1
-        new_str += fruit + "p "
-      else
+      if fruit == "and" || idx == array.length - 1
         new_str += fruit
+      else
+        new_str += fruit + ", "
       end
     end
     return new_str
