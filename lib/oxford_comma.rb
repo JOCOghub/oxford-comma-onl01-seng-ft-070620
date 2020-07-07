@@ -9,16 +9,16 @@ def oxford_comma(array)
   end
     
   if array.length > 2
-    new_arr = []
+    new_str = ""
     array.join(", ")
     array.insert(-2,"and")
     array.each.with_index do |fruit, idx|
       if fruit != "and" || idx != array.length - 1
-        new_arr << fruit + ","
+        new_str += fruit + ","
       else
-        new_arr << fruit
+        new_str += fruit
       end
     end
-    return new_arr.join(' ')
+    return new_str
   end
 end
